@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{38B52F9F-FDF9-4D7A-8883-7933FFF07180}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyBehaviour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ModernGuns_Handgun/Demo Assets/SimpleShoot.cs">
     <Files>
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="17" Column="46" />
-      <File FileName="Assets/Scripts/EnemyBehaviour.cs" Line="31" Column="86" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="10" Column="46" />
+      <File FileName="Assets/Scripts/EnemyBehaviour.cs" Line="36" Column="54" />
+      <File FileName="Assets/ModernGuns_Handgun/Demo Assets/SimpleShoot.cs" Line="25" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -22,7 +22,7 @@ public class SimpleShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Animator>().SetTrigger("Fire");
         }

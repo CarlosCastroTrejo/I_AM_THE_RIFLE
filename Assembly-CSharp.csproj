@@ -61,9 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Nokobot\ModernGuns_Handgun\Demo Assets\SimpleShoot.cs" />
+    <Compile Include="Assets\ModernGuns_Handgun\Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerShooter.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/carlosemilianocastrotrejo/Documents/Tec de Monterrey/4to Semestre/Proyecto de Desarrollo de Videojuegos/PrimerSketchIATR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

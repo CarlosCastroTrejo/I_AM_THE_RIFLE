@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour {
     GameObject torre;
-    float distance;
+    NavMeshAgent agent;
+    public int life;
 
     void Explote() 
     {
@@ -14,7 +16,14 @@ public class EnemyBehaviour : MonoBehaviour {
     // Use this for initialization
     void Start () 
     {
-        torre = GameObject.Find("Torre");
+        torre = GameObject.Find("CentroTorre");
+        agent = this.GetComponent<NavMeshAgent>();
+
+        if (agent == null)
+        {
+            Debug.Log("NavMeshAgent doesn't exist");
+        }
+
         if (torre == null) 
         {
             Debug.Log("GameObject doesn't exist");
@@ -24,14 +33,7 @@ public class EnemyBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        Vector3 dir = torre.transform.position - this.transform.position;
-        this.transform.position = this.transform.position + dir * Time.deltaTime*.1f;
-        Quaternion q = Quaternion.LookRotation(dir);
-        transform.rotation = q;
-        if (Vector3.Distance(torre.transform.position, this.transform.position) <=4.4f) 
-        {
-            Explote();
-        }
+        agent.SetDestination(torre.transform.position);
 
 
     }
