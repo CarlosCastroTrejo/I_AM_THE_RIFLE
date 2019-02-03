@@ -936,9 +936,10 @@ GameObject:
   m_Component:
   - component: {fileID: 493431133}
   - component: {fileID: 493431134}
+  - component: {fileID: 493431135}
   m_Layer: 0
   m_Name: Torre
-  m_TagString: Untagged
+  m_TagString: Torre
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -971,11 +972,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493431132}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.03, y: 1, z: 1.02}
+  m_Center: {x: -0.05, y: 0, z: -0.14}
+--- !u!114 &493431135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 493431132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfc773897dbd549e59b9f5937346664f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTower: 100
 --- !u!1 &494787452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,6 +2667,16 @@ Prefab:
     - target: {fileID: 4955290219219308, guid: 8759cc4f1ecec49a7b40d16d3939d547, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570034021574942, guid: 8759cc4f1ecec49a7b40d16d3939d547,
+        type: 2}
+      propertyPath: m_IsWalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114570034021574942, guid: 8759cc4f1ecec49a7b40d16d3939d547,
+        type: 2}
+      propertyPath: m_WalkSpeed
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8759cc4f1ecec49a7b40d16d3939d547, type: 2}

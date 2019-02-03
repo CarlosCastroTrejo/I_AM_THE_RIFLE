@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 54616620310139922}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 696000bed387545cc8a51ac7fa3ffed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 100
+  lifeEnemy: 100
 --- !u!136 &136807719635918448
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -136,8 +136,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.49999997
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 1
+  m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0

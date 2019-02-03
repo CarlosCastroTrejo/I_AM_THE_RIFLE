@@ -6,12 +6,9 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour {
     GameObject torre;
     NavMeshAgent agent;
-    public int life;
+    public int lifeEnemy;
 
-    void Explote() 
-    {
-        Destroy(this.gameObject);
-    }
+   
 
     // Use this for initialization
     void Start () 
@@ -34,7 +31,23 @@ public class EnemyBehaviour : MonoBehaviour {
 	void Update () 
     {
         agent.SetDestination(torre.transform.position);
-
-
+        if (lifeEnemy <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            lifeEnemy -= 50;
+        }
+        if (other.gameObject.CompareTag("Torre"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+   
 }
