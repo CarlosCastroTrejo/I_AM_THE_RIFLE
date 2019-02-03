@@ -14,7 +14,7 @@ public class EnemyManager : MonoBehaviour {
     // Use this for initialization
     void Start () 
     {
-        InvokeRepeating("CreateEnemies", 2, 6);
+        InvokeRepeating("CreateEnemies", 2, 14);
 		
 	}
 	
