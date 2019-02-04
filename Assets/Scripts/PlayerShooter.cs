@@ -17,7 +17,7 @@ public class PlayerShooter : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) 
         {
             GameObject b = Instantiate(bala, transform.position, transform.rotation) as GameObject;
-            b.GetComponent<Rigidbody>().velocity = transform.forward * 8;
+            b.GetComponent<Rigidbody>().velocity = transform.forward * 17;
         
         }
 
