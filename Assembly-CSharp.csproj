@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\HitEnemy.cs" />
     <Compile Include="Assets\Scripts\PlayerShooter.cs" />
+    <Compile Include="Assets\Scripts\Texto.cs" />
     <Compile Include="Assets\Scripts\TorreBehaviour.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/carlosemilianocastrotrejo/Documents/Tec de Monterrey/4to Semestre/Proyecto de Desarrollo de Videojuegos/PrimerSketchIATR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

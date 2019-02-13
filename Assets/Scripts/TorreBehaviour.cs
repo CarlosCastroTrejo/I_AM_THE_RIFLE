@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TorreBehaviour : MonoBehaviour {
-    public int lifeTower;
+    public static int lifeTower;
 
 	// Use this for initialization
 	void Start () {
+        lifeTower = 100;
 		
 	}
 	
