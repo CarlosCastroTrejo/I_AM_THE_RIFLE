@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{38B52F9F-FDF9-4D7A-8883-7933FFF07180}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerShooter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyBehaviour.cs">
     <Files>
       <File FileName="Assets/Scripts/EnemyManager.cs" Line="17" Column="47" />
-      <File FileName="Assets/Scripts/EnemyBehaviour.cs" Line="17" Column="6" />
+      <File FileName="Assets/Scripts/EnemyBehaviour.cs" Line="61" Column="29" />
       <File FileName="Assets/Scripts/HitEnemy.cs" Line="5" Column="24" />
       <File FileName="Assets/Scripts/PlayerShooter.cs" Line="7" Column="28" />
       <File FileName="Assets/Scripts/TorreBehaviour.cs" Line="10" Column="25" />

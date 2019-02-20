@@ -9,6 +9,7 @@ public class EnemyBehaviour : MonoBehaviour {
     GameObject[] hiddenSpots;
     GameObject theSpot;
     public int lifeEnemy;
+    public Animator anim;
 
    
 
@@ -18,6 +19,8 @@ public class EnemyBehaviour : MonoBehaviour {
         torre = GameObject.Find("CentroTorre");
         agent = this.GetComponent<NavMeshAgent>();
         hiddenSpots = GameObject.FindGameObjectsWithTag("Spots");
+        anim = transform.GetComponentInChildren<Animator>();
+
 
         if (agent == null)
         {
@@ -40,12 +43,23 @@ public class EnemyBehaviour : MonoBehaviour {
             theSpot = hiddenSpots[number];
         }
 
-        Invoke("GoHidden",1);
+
+        if (anim == null)
+        {
+            Debug.Log("No se encuentra el Animator");
+        }
+    
+
+
+         Invoke("GoHidden",1);
     }
 	
 	// Update is called once per frame
 	void Update () 
     {
+        float speed = agent.speed;
+        anim.SetFloat("Speed", speed);
+
         if ((theSpot.transform.position - this.transform.position).magnitude <= 1.2f)
         {
             Invoke("GoAttack", 6);
